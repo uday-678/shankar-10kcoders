@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://127.0.0.1:5500/index.html/forms.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=&lt;device-width&gt;, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <fieldset>
+        <legend>MICROSOFT APPLICATION FORM</legend>
+        <form>
+            <label for="name">first name:</label>
+            <input type="text" id="name" name="fname" required=""><br><br>
+
+            <label for="middle name">middle name:</label>
+            <input type="text" id="middle name" name="mname" required=""><br><br>
+
+            <label for="last name">middle name:</label>
+            <input type="text" id="last name" name="lname" required=""><br><br>
+
+
+            <label for="no">number:</label>
+            <input type="number" id="no" name="number" required=""><br><br>
+
+            <label for="mail">email:</label>
+            <input type="email" id="mail" name="email" required=""><br><br>
+
+            <label for="pswd">password:</label>
+            <input type="password" id="pswd" name="password" required=""><br><br>
+
+            <label for="dob">date of birth:</label>
+            <input type="datetime" id="dob" name="birth" required=""><br><br>
+
+            <label for="colr">color:</label>
+            <input type="color" id="colr" name="clor" required=""><br><br>
+
+            <input type="radio" id="r" name="experience" value="&lt;3" required=""><br><br>
+            <label for="r">experience less than 3 years:</label><br><br>
+            
+            <input type="radio" id="rx" name="experience" value="&gt;3" required=""><br><br>
+            <label for="rx">experience greater than 3 years:</label><br><br>
+
+
+            <label for="position">Position Applied For:</label>
+               <select id="position" name="position">
+                    <option value="uday is junior developer">Junior Developer</option>
+                    <option selected="" value="uday is senior developer">Senior Developer</option>
+                    <option value="uday is project manager">Project Manager</option>
+               </select><br><br>
+
+               <datalist id="browser">
+                       <option></option>
+                        
+               </datalist>
+
+               <label for="rd">upload resume:</label>
+               <input type="file" id="rd" name="file" required=""><br><br>
+
+               <label for="set">reset the form:</label>
+            <input type="reset" id="set" name="reset"><br><br>
+              
+            <label for="setel">submit  the form:</label>
+            <input type="submit" id="setel" name="reset"><br><br>
+
+            </form>
+    </fieldset>
+    
+    
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)http://127.0.0.1:5500/index.html/gt5.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=&lt;device-width&gt;, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> task1</h1>
+    <iframe height="600" width="600" name="myscreen" src="./task-4_files/saved_resource.html">
+    </iframe><br>
+    <iframe height="600" width="600" name="myscreen1" src="./task-4_files/saved_resource(1).html">
+    </iframe><br>
+    <iframe src="./task-4_files/uday.html" height="600" width="600" name="myscreen1">
+    </iframe>
+    
+
+    <a href="./task-4_files/download.jpg" target="myscreen">udayshankarbutti</a>
+    <a href="./task-4_files/download (1).jpg" target="myscreen1">uday</a>
+
+    <h1>task2</h1>
+    <h1> Ordered list</h1>
+
+    <ol type="I" reversed="">
+        <li><a href="https://www.codewithharry.com/tutorial/html-forms/" target="__blank"><img src="./task-4_files/download (1).jpg" alt="prabhas"></a></li>
+
+         <li><a href="https://www.w3schools.com/html/html_iframe.asp" target="__blank"><img src="./task-4_files/download.jpg" alt="paneer"></a></li>
+         
+    </ol>
+    <hr>
+     
+    <h1>unordered list</h1>
+    <ul type="circle" reversed="">
+        <li><a href="https://www.codewithharry.com/tutorial/html-forms/" target="__blank"><img src="./task-4_files/download (1).jpg" alt="prabhas rebel star"></a></li><br>
+
+         <li><a href="https://www.w3schools.com/html/html_iframe.asp" target="__blank"><img src="./task-4_files/download.jpg" alt="paneer curry" `=""></a></li>
+    </ul>
+        
+    
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

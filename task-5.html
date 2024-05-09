@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://127.0.0.1:5500/index.html/table.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            background-color: brown;
+        }
+    </style>
+
+</head>
+    
+   
+<body>
+    <h1>Task-1</h1>
+    <h1>calculator UI</h1>
+    <table border="1">
+        <tbody><tr>
+            <td colspan="3"></td>
+            <!-- Clear button -->
+            <td><button>C</button></td>
+        </tr>
+
+        <tr>
+            <!-- Number buttons -->
+            <td><button>1</button></td>
+            <td><button>2</button></td>
+            <td><button>3</button></td>
+            <td><button>+</button></td>
+        </tr>
+        <tr>
+            <td><button>4</button></td>
+            <td><button>5</button></td>
+            <td><button>6</button></td>
+            <td><button>-</button></td>
+        </tr>
+        <tr>
+            <td><button>7</button></td>
+            <td><button>8</button></td>
+              <td><button>9</button></td>
+            <td><button>*</button></td>
+        </tr>
+        <tr>
+            <td><button>=</button></td>
+            <td><button>0</button></td>
+            <td><button>.</button></td>
+            <td><button>/</button></td>
+        </tr>
+    </tbody></table>
+
+    <h1>Task-2</h1>
+    <h1>Image gallery UI</h1>
+    <div class="nospace">
+        </div><table border="2">
+        <tbody><tr>
+            <th>prabhas images</th>
+        </tr>
+        <tr>
+            <td rowspan="5"><img src="./task-5_files/csk.jpg" alt="image-1"></td>
+            <td><img src="./task-5_files/kkr.jpg" alt="image-2"></td>
+        </tr>
+        <tr>
+            <td><img src="./task-5_files/lsg.jpg" alt="image-3"></td>
+            <td><img src="./task-5_files/pkr.jpg" alt="image-4"></td>
+
+        </tr>
+        <tr>
+            <td colspan="6"><img src="./task-5_files/lll.jpg" alt="image-5"></td>
+            <td><img src="./task-5_files/ppp.jpg" alt="image-6"></td>
+        </tr>
+        <tr>
+            <td><img src="./task-5_files/jjj.jpg" alt="image-7"></td>
+            <td><img src="./task-5_files/kkk.jpg" alt="image-8"></td>
+        </tr>
+        
+    </tbody></table>
+    
+    
+    <h1>task-3</h1>
+    <h1>OWN UI(IPL POINTS TABLE)</h1>
+    <table border="4">
+        <tbody><tr>
+            <th>TEAM</th>
+            <th>WIN</th>
+            <th>LOST</th>
+            <th>POINTS</th>
+            <th>NNT</th>
+        </tr>
+        <tr>
+            <td>CSK</td>
+            <td>14</td>
+            <td>0</td>
+            <td>28</td>
+            <td>+777</td>
+        </tr>
+        <tr>
+            <td>RCB</td>
+            <td>13</td>
+            <td>01</td>
+            <td>26</td>
+            <td>+1.450</td>
+        </tr>
+        <tr>
+            <td>KKR</td>
+            <td>10</td>
+            <td>04</td>
+            <td>20</td>
+            <td>+1.789</td>
+        </tr>
+        <tr>
+            <td>SRH</td>
+            <td>09</td>
+            <td>05</td>
+            <td>18</td>
+            <td>+0.456</td>
+        </tr>
+        <tr>
+            <td>MI</td>
+            <td>09</td>
+            <td>05</td>
+            <td>18</td>
+            <td>+0.879</td>
+        </tr>
+        <tr>
+            <td>LSG</td>
+            <td>07</td>
+            <td>07</td>
+            <td>14</td>
+            <td>-0.567</td>
+        </tr>
+        <tr>
+            <td>DC</td>
+            <td>04</td>
+            <td>10</td>
+            <td>8</td>
+            <td>-0.789</td>
+        </tr>
+        <tr>
+            <td>PBKS</td>
+            <td>04</td>
+            <td>11</td>
+            <td>8</td>
+            <td>-1.78</td>
+        </tr>
+        <tr>
+            <td>RR</td>
+            <td>04</td>
+            <td>11</td>
+            <td>8</td>
+            <td>-0.245</td>
+        </tr>
+        <tr>
+            <td>GT</td>
+            <td>03</td>
+            <td>12</td>
+            <td>9</td>
+            <td>0.678</td>
+        </tr>
+        </tbody></table>
+
+    
+    
+
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
