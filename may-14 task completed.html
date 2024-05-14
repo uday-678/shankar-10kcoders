@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)http://127.0.0.1:5500/index.html/css.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .today{
+            color: tomato;
+            background-color: aqua;
+            font-size: large;
+        }
+        .bt{
+            color: orange;
+            background-color: antiquewhite;
+            font-size: large;
+        }
+        .gt{
+            color:dodgerblue ;
+            background-color: beige;
+            font-size: large;
+        }
+        .hy{
+            color:yellow ;
+            background-color: bisque;
+            font-size: large;
+        }
+        .uy{
+            color:seagreen;
+            background-color: beige;
+        }
+        .cd{
+            color: gray;
+            background-color: blanchedalmond;
+            font-size: large;
+        }
+        .vg{
+            color: slateblue;
+            background-color: azure;
+            font-size: large;
+        }
+        .bh{
+            color:violet;
+            background-color: black;
+            font-size: large;
+        }
+        .hj{
+            color: lightgray;
+            background-color: blanchedalmond;
+            font-size: large;
+        }
+        .vc{
+            color: darkgreen;
+            background-color: blue;
+            font-size: large;
+        }
+
+
+    </style>
+</head>
+<body>
+      <pre>        <div>
+           <span class="today">tomato</span>
+           <span class="bt">orange</span><br><br>
+           </div>
+           <div>
+           <span class="gt">dogerblue</span>
+           <span class="hy">yellow</span><br><br>
+           </div>
+           <div>
+               <span class="uy">medium sea green</span>
+               <span class="cd">gray</span><br><br>
+           </div>
+           <div>
+              <span class="vg">slateblue</span>
+              <span class="bh">violet</span><br><br>
+          </div>
+          <div>
+              <span class="hj">lightgray</span>
+              <span class="vc">dark green</span>
+          </div>
+
+      </pre>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
